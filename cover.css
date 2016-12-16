@@ -1,0 +1,272 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-default span{
+    display:inline;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color:#0e3441;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#page-home{
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:1; /* display first */
+  visibility:visible;
+  -webkit-transition: opacity .5s, visibility .5s; /* compatability */
+  transition: opacity .5s, visibility .5s;
+}
+
+#page-project{
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  visibility:hidden;
+  -webkit-transition: opacity .5s, visibility .5s; /* compatability */
+  transition: opacity .5s, visibility .5s;
+}
+
+#page-about{
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility .5s; /* compatability */
+  transition: opacity .5s, visibility .5s;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,.5); /* for old browsers */
+  box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.content-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/* background image */
+.background-img{
+  background-image:url('img/cathy.jpg');
+  background-repeat:no-repeat;
+  background-position: center center;
+  -webkit-box-shadow: inset 0 0 75px rgba(0,0,0,.5); /* for old browsers */
+  box-shadow: inset 0 0 75px rgba(0,0,0,.5);
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-brand .glyphicon {
+    margin-right:10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* stack nav elements if less than 768px, otherwise float */
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ *  Home page cover
+ */
+
+.cover {
+  padding: 0 20px;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*if screen is big enough for nav floats, float cover box right too */
+@media (min-width: 768px){
+    .cover{
+        float:right;
+    }
+}
+
+
+/*
+ * Affix and center - header and cover positioning
+ */
+
+@media (min-width: 768px) {
+  /* Fix header to top if screen is large enough, otherwise position above cover text within normal content-container bounds */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+
+  /* Start the vertical centering */
+  /* Move cover text to middle of screen */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Full screen width on small screens */
+  .masthead,
+  .content-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+/* make sure size is no bigger than npx on larger screens */
+@media (min-width: 992px) {
+  .masthead,
+  .content-container {
+    width: 992px;
+  }
+}
+
+/*
+ * Content Area (Projects/About)
+ */
+.content-area {
+  padding: 0 20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/*
+ * Projects page
+ */
+
+.thumbnail{
+    background-color:transparent;
+    border:4px solid white;
+    border-radius:4px;
+    -webkit-transition: border .1s; /* compatability */
+    transition: border .1s;
+}
+
+.thumbnail:hover{
+    border:6px solid white;
+    cursor:pointer;
+}
+
+.caption *{
+    color:white;
+}
+
+.row a{
+    text-decoration: none;
+}
+
+.modal-content{
+    background-color:#0e3441;
+}
+
+.close{
+    color:white;
+    text-shadow:none;
+    opacity:1;
+}
+
+.close:hover,
+.close:focus{
+    color:white;
+    text-shadow:none;
+    opacity:.50;
+}
+
+.modal-body p{
+    text-align: left;
+    margin-top:15px;
+}
+
+/*
+ * About page
+ */
+
+p.lead a{
+    text-decoration: underline;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="CDM Portfolio Site">
+    <meta name="author" content="Alex Fisher">
+    <link rel="icon" href="">
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link href="cover.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+    <!-- Home Page -->
+    <div class="site-wrapper" id="page-home">
+
+      <div class="site-wrapper-inner background-img">
+
+        <div class="content-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h2 class="masthead-brand"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span>Alex Fisher</h2>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#" onclick="transition('page-project','page-home','page-about')">Projects</a></li>
+                  <li><a href="#" onclick="transition('page-about','page-home','page-project')">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="cover">
+            <h1>Welcome to my portfolio</h1>
+            <p class="lead">This portfolio showcases various projects I completed for a course in composing digital media.</p>
+            <p>
+              <a href="#" class="btn btn-lg btn-default" onclick="transition('page-project','page-home','page-about')">View Projects</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Project Page -->
+   <div class="site-wrapper" id="page-project">
+
+      <div class="site-wrapper-inner">
+        
+        <div class="content-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h2 class="masthead-brand"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span>Alex Fisher</h2>
+              <nav>
+               <ul class="nav masthead-nav">
+                  <li><a href="#" onclick="transition('page-home','page-project','page-about')">Home</a></li>
+                  <li class="active"><a href="#">Projects</a></li>
+                  <li><a href="#" onclick="transition('page-about','page-project','page-home')">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="content-area">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-3">
+                    <a href="#" data-toggle="modal" data-target="#infographic">
+                        <div class="thumbnail"> 
+                            <img src="img/analytics.png">
+                            <div class="caption">
+                                <h3>Infographic</h3>
+                                <p>Info about college drinking</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-toggle="modal" data-target="#podcast">
+                        <div class="thumbnail"> 
+                            <img src="img/headphones.png">
+                            <div class="caption">
+                                <h3>Podcast</h3>
+                                <p>The evolution of Pitt script</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-toggle="modal" data-target="#concept">
+                        <div class="thumbnail"> 
+                            <img src="img/video-player.png">
+                            <div class="caption">
+                                <h3>Concept in 60</h3>
+                                <p>War in 60 seconds</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" data-toggle="modal" data-target="#wildcard">
+                        <div class="thumbnail"> 
+                            <img src="img/programming.png">
+                            <div class="caption">
+                                <h3>Wildcard</h3>
+                                <p>This website!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>   
+      
+    <!-- Project Modals    -->
+    <!-- Infographic -->
+    <div id="infographic" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Infographic</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/fisher_infographic_4.png" width="560">
+            <p>For this infographic I wanted to focus on awareness and prevalence of drinking in college but also the potential risks and consequences, as I don't think many students take them seriously enough. For the layout of the infographic I decided to first cover the prevalence of college drinking while also defining any key terms as they were introduced, in this case "binge drinking." I then added a section on the consequences of college drinking starting with the most obvious for students: academic problems. I finished the section by presenting statistics on the criminal and life-threatening risks of college drinking because I wanted to leave the reader on a more serious note.</p>
+            <p>I decided to continue the color scheme that I had used in my earlier drafts. I thought the dark background would be easier on the eyes while the dominant colors of blue and gold would help appeal to my target audience of Pitt students. The white text was an obvious choice as it was clear and easy to read against the dark background. In the consequences sections of the infographic, I decided to add some red to convey more of a warning and grab the reader's attention. I originally made many of the graphics and headings red but I felt that it was overdone, annoying to look at, and took away from the warning I was trying to include. Instead I chose to use red as an accent color just to highlight some of the key points and graphics. I went with a neutral font as not to distract from the seriousness of the content, but tried to pair text with graphics to keep it from getting boring. At the same time I wanted the images to convey a message on their own, so while I was revising I considered whether or not the infographic still made sense without text. While some of the specific details may be lost, I think the overall message is still there even with just the graphics.</p>
+         	<p>For my final revision I only made a few small changes. I cleaned up the alignment and positioning of the text and graphics so that there was a more even margin down the sides. In addition I got rid of some charts that had no real data attached to them, and replaced them with simple graphics that worked just as well without being as confusing. I also made the title heading larger, as it was smaller than the subheadings. My hope is that students will find this graphic to be interesting and informative.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Podcast -->
+    <div id="podcast" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Podcast</h4>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298193431&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <p>For this podcast I wanted to choose a topic that would actually grab someone’s attention for 6 minutes. Since my target audience was mostly Pitt students, I decided to talk about something recognizable here in Pittsburgh: the Pitt script logo. Not only can current students relate to this topic, but alumni as well since this logo has been such a large part of Pitt’s history.</p>  
+            <p>I start with the Pitt script’s origins, and work my way chronologically through Pitt’s branding history, discussing major changes and aesthetic choices along the way. The podcast concludes with the recent return of Pitt script and the reasons behind it. I used a few famous Pitt songs as background tracks and to transition between topics, along with a few generic soundbytes. I tried to keep the podcast on the short side to keep my audience from losing interest. In hindsight, I wish I would have recorded with a slightly better microphone, but overall I’m happy with the way the podcast turned out and I hope listeners find it informative.</p>
+            <p>This project required far more research than any of the others, and I spent a lot of time compiling information from various news articles, fan blogs, and other online sources. Luckily I have had experience recording audio like this before, so actually recording the podcast was pretty painless once I had written a script. My interviews did not pan out as I had hoped, but I was fortunate enough to have a few friends willing to provide some insight. I found the editing process to be more difficult, as Audacity’s interface is less than intuitive when you’re working with almost 20 tracks.</p>
+            <p>I wanted to incorporate Pitt’s branding evolution over the years into the podcast icon. My original drafts simply featured different Pitt logos overlaid over each other, but I found this to be cluttered and rather ugly. The final icon features the podcast title partially in the Pitt “block” lettering and partially in the famous script. The contrast between the two really shows the drastic changes Pitt has made through the years. I used Pitt blue and gold for the colors and tried to copy Pitt’s lettering and outline style as closely as I could.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Concept in 60 -->
+    <div id="concept" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Concept in 60</h4>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qg7UDbTF1cg" frameborder="0" allowfullscreen></iframe>
+            <p>My video aims to represent the concept of war in 60 seconds. I originally struggled to decide on a concept for this video but found that one of our resources, the Prelinger archives, contained tons of historical war and wartime propaganda footage. I chose to use footage from the 1940’s and 1950’s, as World War II was an iconic and well documented era in world history as well as the last time we saw true “total war.” I also found that the horrors seen in World War II combat footage, in particular, heavily contrasted propaganda films from the era. The images of Bugs Bunny sporting a soldier's helmet seen by the public were far from reality, and one of my goals for the video was to show this contrast.</p>
+            <p>In my earlier revisions I cut between scenes from the front lines and scenes from propaganda films, but I found this approach to be too choppy, confusing, and discontinuous. I was able to more effectively convey the message by matching intense combat footage with a light, upbeat, jingle ripped from a whimsical cartoon about safety during air raids. This pairing of sound and visual elements is definitely not what the audience would be expecting, and I hope this makes the video stand out more. For my final revision, I decided to cut out President Roosevelt's famous “day of infamy” speech that served as the intro in earlier revisions. I really liked having this in the intro, but decided to “kill my darlings” and remove it as it shifted the focus of the video more towards the United States and not the concept of war in general. I replaced it with footage and music from a propaganda film to continue the theme of contrast, and also cleaned up the end of the video to make it more continuous.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Wildcard -->
+    <div id="wildcard" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Wildcard</h4>
+          </div>
+          <div class="modal-body">
+            <p>My wildcard (choose your own) project was building this portfolio site from scratch. You can find additional information on the About page.</p>
+            <p>I was not a huge fan of restricting myself to Wordpress templates for the portfolio element of this course, and as a computer science student I happened to have a passion for web design. Naturally this led me to make my own portfolio.</p>
+            <p>The first decision was deciding what tools to use to build the site. I have coded websites from the ground up with just basic HTML and CSS before. While this is a satisfying experience, I’ve found that it is very time consuming, and using a popular framework like Bootstrap can help you produce the basic structure of the site in less time, while still allowing you to include loads of customization. That being said, this was my first time using Bootstrap, so it was still very much a slow learning experience.</p>
+            <p>After drawing up three or four designs on paper, I finally settled on this current one. I wanted to keep the design of the website as minimalistic and easy to use as possible. One of the things that drove me away from Wordpress and other website makers in the first place was the unnecessary clutter. I went with a simple splash screen and chose one of my favorite pictures of the Cathedral as a background image to spice it up. I used one of the dominant colors in this picture as the background color for the other two pages, and created some simple and clean thumbnails for the project page, using modal windows to house the actual projects and artist statements. The smooth page transitions were made with a little bit of Javascript. I took special care to follow Bootstrap’s philosophy of responsive design. That is, the website scales to work just as well on desktops as it does on tablets and phones. The interface is just as minimal as the rest of the design, and I hope this makes it easy for everyone to use.</p>
+            <p>I by far spent the most time on the wildcard project, but I had a blast doing it. I’m really happy with the result, and while it might not be the flashiest I think it serves its purpose well without becoming too cluttered. There was something oddly satisfying about creating my own portfolio site to house the projects that I also created.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Page -->
+   <div class="site-wrapper" id="page-about">
+
+      <div class="site-wrapper-inner">
+        
+        <div class="content-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h2 class="masthead-brand"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span>Alex Fisher</h2>
+              <nav>
+               <ul class="nav masthead-nav">
+                  <li><a href="#" onclick="transition('page-home','page-about','page-project')">Home</a></li>
+                  <li><a href="#" onclick="transition('page-project','page-about','page-home')">Projects</a></li>
+                  <li class="active"><a href="#">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="content-area">
+              <h3>What is this?</h3>
+              <p class="lead">I'm Alex Fisher, a Computer Science student at the University of Pittsburgh. I built this website to showcase the work I have created this semester in Composing Digital Media: Multisensory Design, a course where we explore various digital media forms and the aesthetic choices that go into designing them. You can view the projects and artist statements on the Projects page.</p>
+              <h3>Technical Info</h3>
+              <p class="lead">This website was made with HTML5, Bootstrap (CSS/Javascript), plus some custom CSS/Javascript. It is based on the Bootstrap Cover example originally by <a href="https://twitter.com/mdo">@mdo</a>. The source code for this site can be found here</p>
+              <h3>Additional Credits</h3>
+              <p class="lead">This site uses icons licensed under <a href="http://creativecommons.org/licenses/by/3.0/" >CC 3.0 BY</a> from <a href="http://www.flaticon.com/">Flaticon</a> by the following authors:<br>
+                  <a href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a>, <a href="http://www.freepik.com">Freepik</a>, <a href="http://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>   
+      
+      
+    <!-- custom page transitions in pure javascript -->
+    <script src="customTransition.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
